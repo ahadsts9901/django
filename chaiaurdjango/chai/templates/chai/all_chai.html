@@ -6,4 +6,20 @@ All Chai
 
 {% block content %}
 <h1>All chai</h1>
+<p>Total chais: {{ chais|length }}</p>
+
+<div class="all-chais">
+    {% for chai in chais %}
+    <div class="chai-item">
+        <img src="{{chai.image.url}}" alt="chai-image" />
+        <h2>{{chai.name}}</h2>
+        <a href="{% url 'chai-detail' chai.id %}">
+            <button>
+                {{chai.chai_type}} {{chai.id}}
+            </button>
+        </a>
+    </div>
+{% endfor %}
+</div>
+
 {% endblock  %}

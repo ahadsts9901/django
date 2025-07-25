@@ -3,4 +3,4 @@ from .models import ChaiVariety
 
 # Register your models here.
 
-admin.register(ChaiVariety)
+admin.site.register(ChaiVariety)

@@ -6,3 +6,47 @@ body{
 h1{
     text-align: center;
 }
+
+.all-chais{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1em;
+    padding: 1em;
+}
+
+.chai-item{
+    display: flex;
+    flex-direction: column;
+    padding: 0.5em;
+    gap: 0.5em;
+    border: 1px solid white;
+    border-radius: 0.5em;
+}
+
+.chai-item>img{
+    border-radius: 0.5em;
+    object-fit: cover;
+    object-position: center;
+}
+
+.chai-item>h2{
+    font-size:1.2em;
+}
+
+.chai-item button{
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    padding: 0.3em;
+    width: 100%;
+    text-align: center;
+    border-radius: 0.5em;
+}
+
+.single-chai-image{
+    margin-top: 2em;
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center;
+}

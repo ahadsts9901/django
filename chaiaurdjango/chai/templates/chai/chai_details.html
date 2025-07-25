@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}
+{{chai.chai_type}}
+{% endblock  %}
+
+{% block content %}
+
+<img src="{{chai.image.url}}" alt="chai-image" class="single-chai-image" />
+<h2>{{chai.name}}</h2>
+<p>{{chai.description}}</p>
+<p>{{chai.price}}</p>
+
+{% endblock  %}
