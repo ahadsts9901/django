@@ -50,3 +50,16 @@ h1{
     object-fit: cover;
     object-position: center;
 }
+
+.chai-form{
+    color: #79808d!important;
+}
+
+.chai-form button{
+    background-color: antiquewhite;
+    color: black;
+    padding: 0.5em 1em;
+    cursor: pointer;
+    border-radius: 0.4em;
+    margin: 1em;
+}
